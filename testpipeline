@@ -1,6 +1,6 @@
 @Library('mylibrary') _
 
-import com.cleverbuilder.GlobalVars
+import com.jcheenatcode.GlobalVars
 
 pipeline {
     agent any
