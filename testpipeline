@@ -1,0 +1,17 @@
+@Library('mylibrary') _
+
+import com.cleverbuilder.GlobalVars
+
+pipeline {
+    agent any
+    stages {
+        stage('Demo') {
+            steps {
+                echo 'Hello, world'
+                sayHello 'Dave'
+
+                echo 'The value of foo is : ' + GlobalVars.foo
+            }
+        }
+    }
+}
