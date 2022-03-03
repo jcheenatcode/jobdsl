@@ -13,5 +13,17 @@ pipeline {
                 echo 'The value of foo is : ' + GlobalVars.foo
             }
         }
+
+        stage('create jobs') {
+            String[] jobs = ["ex_1", "ex_2", "ex_3"]
+
+            jobs.each { item, idx ->
+                job("example_${item}") {
+                    steps {
+                        batchFile('echo Hello World!')
+                    }
+                }
+            }
+        }
     }
 }
