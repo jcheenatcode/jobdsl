@@ -1,7 +1,3 @@
-@Library('mylibrary') _
-
-import com.jcheenatcode.GlobalVars
-
 pipelineJob('example') {
     properties {
         buildDiscarder {
