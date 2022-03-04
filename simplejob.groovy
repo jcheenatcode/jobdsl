@@ -17,11 +17,17 @@ pipelineJob('example') {
 
         parametersDefinitionProperty {
             parameterDefinitions {
-                stringParameterDefinition {
+				stringParameterDefinition {
                     name('module_name')
                     description('module name description')
                     defaultValue('Test')
                     trim(false)
+                }
+				stringParameterDefinition {
+                    name('module_name2')
+                    description('module name 2 description')
+                    defaultValue('Test 2')
+                    trim(true)
                 }
             }
         }
