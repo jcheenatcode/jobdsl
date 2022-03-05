@@ -1,5 +1,16 @@
-datas = readYaml(file:'dev.yaml')
-echo datas.toString()
+import groovy.yaml.YamlSlurper
+
+// Create YAML file.
+def yamlFile = new File("jobs.yml")
+def datas;
+
+yamlFile.withReader { reader ->
+    // Use parse method of YamlSlurper.
+    datas = new YamlSlurper().parse(reader)
+    
+    echo datas.toString()
+}
+
 
 String[] jobs = ["ex_1", "ex_2", "ex_3"]
 
