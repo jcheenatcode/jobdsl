@@ -1,3 +1,4 @@
+@Grab(group='org.codehaus.groovy', module='groovy-yaml', version='3.0.9')
 import groovy.yaml.YamlSlurper
 
 // Create YAML file.
