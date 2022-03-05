@@ -2,7 +2,7 @@
 import groovy.yaml.YamlSlurper
 
 // Create YAML file.
-def yamlFile = new File("jobs.yaml")
+def yamlFile = new File("./jobs.yaml")
 def datas;
 
 yamlFile.withReader { reader ->
