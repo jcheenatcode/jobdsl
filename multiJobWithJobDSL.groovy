@@ -14,7 +14,7 @@ println datas.toString()
 String[] jobs = ["ex_1", "ex_2", "ex_3"]
 
 
-jobs.each { item, idx ->
+jobs.eachWithIndex { item, idx ->
     job("example_${item}") {
         steps {
             batchFile('echo Hello World!')
