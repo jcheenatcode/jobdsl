@@ -1,6 +1,10 @@
 @Grab(group='org.codehaus.groovy', module='groovy-yaml', version='3.0.9')
 import groovy.yaml.YamlSlurper
 
+def dirVal = new File('.').absolutePath
+
+println dirVal
+
 // Create YAML file.
 def yamlFile = new File("./jobs.yaml")
 def datas;
