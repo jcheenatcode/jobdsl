@@ -13,10 +13,10 @@ println dirVal
 // def envVars = Jenkins.instance.getGlobalNodeProperties()[0].getEnvVars() 
 // println envVars.toString()
 
-def releaseScript = readFileFromWorkspace('jobs.yaml')
+def yamlFile = readFileFromWorkspace('jobs.yaml')
 
 // Create YAML file.
-def yamlFile = new File("./jobs.yaml")
+// def yamlFile = new File("./jobs.yaml")
 def datas;
 
 yamlFile.withReader { reader ->
