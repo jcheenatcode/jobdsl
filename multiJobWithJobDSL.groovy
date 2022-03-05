@@ -15,6 +15,8 @@ println dirVal
 
 def yamlFile = readFileFromWorkspace('jobs.yaml')
 
+println yamlFile
+
 // Create YAML file.
 // def yamlFile = new File("./jobs.yaml")
 def datas;
