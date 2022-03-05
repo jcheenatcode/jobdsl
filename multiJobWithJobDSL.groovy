@@ -1,9 +1,13 @@
 @Grab(group='org.codehaus.groovy', module='groovy-yaml', version='3.0.9')
 import groovy.yaml.YamlSlurper
+import jenkins.model.Jenkins
 
 def dirVal = new File('.').absolutePath
-
 println dirVal
+
+
+def envVars = Jenkins.instance.getGlobalNodeProperties()[0].getEnvVars() 
+println envVars.toString()
 
 // Create YAML file.
 def yamlFile = new File("./jobs.yaml")
