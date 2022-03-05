@@ -1,0 +1,26 @@
+jobs:
+ -  
+  project: test
+  deployConfig:
+   -
+    src:
+     type: repo
+     branch: test
+    dest:
+     - 
+      jobFolderPath: test
+      vm: testt
+     -
+      jobFolderPath: test
+      vm: test
+ -
+  project: test
+  deployConfig:
+   -
+    src:
+     type: test
+     branch: test
+    dest:
+     -
+      jobFolderPath: test
+      vm: test
