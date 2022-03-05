@@ -5,13 +5,15 @@ import jenkins.model.Jenkins
 def dirVal = new File('.').absolutePath
 println dirVal
 
-println env.toString();
+// println env.toString();
 
-def workspace = build.getEnvVars()["WORKSPACE"]
-println workspace;
+// def workspace = build.getEnvVars()["WORKSPACE"]
+// println workspace;
 
-def envVars = Jenkins.instance.getGlobalNodeProperties()[0].getEnvVars() 
-println envVars.toString()
+// def envVars = Jenkins.instance.getGlobalNodeProperties()[0].getEnvVars() 
+// println envVars.toString()
+
+def releaseScript = readFileFromWorkspace('jobs.yaml')
 
 // Create YAML file.
 def yamlFile = new File("./jobs.yaml")
