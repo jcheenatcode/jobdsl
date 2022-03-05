@@ -5,6 +5,8 @@ import jenkins.model.Jenkins
 def dirVal = new File('.').absolutePath
 println dirVal
 
+println env.toString();
+
 def workspace = build.getEnvVars()["WORKSPACE"]
 println workspace;
 
