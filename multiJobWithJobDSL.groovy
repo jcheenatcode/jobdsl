@@ -9,7 +9,7 @@ println yamlFile
 def datas;
 
 datas = new YamlSlurper().parseText(yamlFile)
-echo datas.toString()
+println datas.toString()
 
 String[] jobs = ["ex_1", "ex_2", "ex_3"]
 
