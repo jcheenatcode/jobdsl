@@ -1,0 +1,26 @@
+jobs:
+ -  
+  project: Optimus
+  deployConfig:
+   -
+    src:
+     type: repo
+     branch: main
+    dest:
+     - 
+      jobFolderPath: Primes
+      vm: test
+     -
+      jobFolderPath: Leaders
+      vm: test
+ -
+  project: Bumble Bee
+  deployConfig:
+   -
+    src:
+     type: repo
+     branch: main
+    dest:
+     -
+      jobFolderPath: Non Primes
+      vm: test
